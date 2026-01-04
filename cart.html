@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS for Cart Section */
+.cart-section {
+    padding: 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.cart-section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.item-details {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.item-details h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.item-details p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.item-details input[type="number"] {
+    width: 50px;
+    padding: 0.3rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.remove-item {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.remove-item:hover {
+    background-color: #d32f2f;
+}
+
+.cart-summary {
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.cart-summary p {
+    margin: 0.5rem 0;
+}
+
+.checkout-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #388E3C;
+}
+
+</style>
+<body>
+    <section class="cart-section">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/100" alt="Product Image">
+                <div class="item-details">
+                    <h3>Product Name</h3>
+                    <p>Quantity: <input type="number" value="1" min="1"></p>
+                    <p>Price: $12.99</p>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+    
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+                <img src="https://via.placeholder.com/100" alt="Product Image">
+                <div class="item-details">
+                    <h3>Product Name</h3>
+                    <p>Quantity: <input type="number" value="2" min="1"></p>
+                    <p>Price: $7.99</p>
+                </div>
+                <button class="remove-item">Remove</button>
+            </div>
+        </div>
+    
+        <div class="cart-summary">
+            <p>Total Items: 3</p>
+            <p>Total Price: $28.97</p>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </section>
+    
+</body>
+</html>
